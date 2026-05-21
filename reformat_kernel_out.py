@@ -68,7 +68,6 @@ def transform(words: list[str]) -> list[list[str]]:
 
 
 def write_lines(path: Path, lines: list[list[str]]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8") as f:
         for line_words in lines:
             if len(line_words) != WORDS_PER_SUB_GROUP:
