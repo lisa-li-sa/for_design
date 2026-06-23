@@ -16,6 +16,9 @@ Input format:
 
 Output format:
 - Each line has exactly 64 words separated by one space.
+
+python3 reformat_kernel_out.py --input kernel_out.hex --output kernel_out_reordered.hex
+
 """
 
 from __future__ import annotations
